@@ -1,0 +1,65 @@
+.title {
+ color: rgb(6, 7, 7);
+ font-family: system-ui,'Segoe UI','Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .faixa { position: absolute;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background-color: rgb(146, 20, 20);
+  } 
+
+.faixa-esquerda {
+ left: 0; } 
+
+.faixa-direita {
+  right: 0; }
+
+    
+.input {
+  width: 250px;
+    color: #000000;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+   
+.bt {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    border: 2px solid;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+    
+
+    .bt:hover {
+      color: white;
+    }
+
+.bt::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    background-color: rgb(165, 0, 0);
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .bt:hover::before {
+    width: 160%;
+  }
+  
